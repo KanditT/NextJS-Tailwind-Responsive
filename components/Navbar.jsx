@@ -22,6 +22,9 @@ const Navbar = () => {
       }
     };
     window.addEventListener("scroll", changeColor);
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
   }, []);
 
   return (
@@ -31,19 +34,34 @@ const Navbar = () => {
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
-          <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
-            Captur
-          </h1>
+          <div className="flex items-center">
+            <h1
+              style={{ color: `${textColor}` }}
+              className="font-bold text-3xl mr-2"
+            >
+              ENGINEER
+            </h1>
+            <img
+              src="LoGo.png"
+              style={{ height: "50px", cursor: "pointer", margin: "30px 0" }}
+            />
+            <h1
+              style={{ color: `${textColor}` }}
+              className="font-bold text-3xl ml-2"
+            >
+              LIBRARY
+            </h1>
+          </div>
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className="p-4">
+          <li className="p-5 text-2xl" style={{ fontWeight: "bold" }}>
             <Link href="/">Home</Link>
           </li>
-          <li className="p-4">
+          <li className="p-5 text-2xl" style={{ fontWeight: "bold" }}>
             <Link href="/work">Booking</Link>
           </li>
-          <li className="p-4">
-            <Link href="/contact">Mapping</Link>
+          <li className="p-5 text-2xl" style={{ fontWeight: "bold" }}>
+            <Link href="/mapping">Mapping</Link>
           </li>
         </ul>
 
@@ -59,29 +77,32 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
-              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
+              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-slate-400 text-center ease-in duration-300"
+              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-slate-400 text-center ease-in duration-300"
           }
         >
           <ul>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
+              className="p-5 text-2xl hover:text-gray-500"
+              style={{ fontWeight: "bold" }}
             >
               <Link href="/">Home</Link>
             </li>
 
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
+              className="p-5 text-2xl hover:text-gray-500"
+              style={{ fontWeight: "bold" }}
             >
               <Link href="/work">Booking</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
+              className="p-5 text-2xl hover:text-gray-500"
+              style={{ fontWeight: "bold" }}
             >
-              <Link href="/contact">Mapping</Link>
+              <Link href="/mapping">Mapping</Link>
             </li>
           </ul>
         </div>

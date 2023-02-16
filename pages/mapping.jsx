@@ -3,7 +3,7 @@ import React from "react";
 import LibrabyMap from "../components/LibrabyMap";
 import Hero from "../components/Hero";
 
-const contact = () => {
+const mapping = () => {
   return (
     <div>
       <Hero
@@ -16,4 +16,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default mapping;
