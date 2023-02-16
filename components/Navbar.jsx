@@ -37,36 +37,63 @@ const Navbar = () => {
           <div className="flex items-center">
             <h1
               style={{ color: `${textColor}` }}
-              className="font-bold text-3xl mr-2"
+              className="font-bold text-2xl sm:text-3xl mr-2 sm:mr-4"
             >
               ENGINEER
             </h1>
             <img
               src="LoGo.png"
-              style={{ height: "50px", cursor: "pointer", margin: "30px 0" }}
+              style={{
+                height: "50px",
+                cursor: "pointer",
+                margin: "30px 0",
+                maxHeight: "5vh",
+              }}
             />
             <h1
               style={{ color: `${textColor}` }}
-              className="font-bold text-3xl ml-2"
+              className="font-bold text-2xl sm:text-3xl mr-2 sm:mr-4"
             >
               LIBRARY
             </h1>
           </div>
+          <style jsx>{`
+            @media (min-width: 1001px) {
+              h1 {
+                font-size: 3vw;
+              }
+            }
+
+            @media (max-width: 1000px) {
+              h1 {
+                font-size: 4vw;
+              }
+            }
+          `}</style>
         </Link>
-        <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className="p-5 text-2xl" style={{ fontWeight: "bold" }}>
+        <ul style={{ color: `${textColor}` }} className="hidden md:flex">
+          <li
+            className="p-5 text-2xl"
+            style={{ fontWeight: "bold", fontSize: "2vw" }}
+          >
             <Link href="/">Home</Link>
           </li>
-          <li className="p-5 text-2xl" style={{ fontWeight: "bold" }}>
-            <Link href="/work">Booking</Link>
+          <li
+            className="p-5 text-2xl"
+            style={{ fontWeight: "bold", fontSize: "2vw" }}
+          >
+            <Link href="/booking">Booking</Link>
           </li>
-          <li className="p-5 text-2xl" style={{ fontWeight: "bold" }}>
+          <li
+            className="p-5 text-2xl"
+            style={{ fontWeight: "bold", fontSize: "2vw" }}
+          >
             <Link href="/mapping">Mapping</Link>
           </li>
         </ul>
 
         {/* Mobile Button */}
-        <div onClick={handleNav} className="block sm:hidden z-10">
+        <div onClick={handleNav} className="block md:hidden z-10">
           {nav ? (
             <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
           ) : (
@@ -77,8 +104,8 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-slate-400 text-center ease-in duration-300"
-              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-slate-400 text-center ease-in duration-300"
+              ? "md:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-slate-400 text-center ease-in duration-300"
+              : "md:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-slate-400 text-center ease-in duration-300"
           }
         >
           <ul>

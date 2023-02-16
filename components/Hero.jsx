@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hero = ({ heading, message }) => {
+const Hero = ({ heading, message, buttonMess, buttonLink }) => {
   return (
     <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
       {/* Overlay */}
@@ -16,7 +16,8 @@ const Hero = ({ heading, message }) => {
           {message}
         </p>
 
-        <button
+        <a
+          href={buttonLink}
           className="px-8 py-2 border text-center"
           style={{
             position: "absolute",
@@ -34,8 +35,8 @@ const Hero = ({ heading, message }) => {
             fontSize: "1rem",
           }}
         >
-          Booking here!
-        </button>
+          {buttonMess}
+        </a>
 
         <style jsx>{`
           @media (max-width: 768px) {

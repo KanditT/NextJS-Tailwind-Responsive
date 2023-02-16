@@ -7,7 +7,7 @@ const LibrabyImg = ({ socialImg, caption }) => {
     <div className="relative">
       <Image
         src={socialImg}
-        alt="/"
+        alt="LibrabyImg"
         className="w-full h-full"
         layout="responsive"
       />

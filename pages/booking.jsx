@@ -1,17 +1,17 @@
 import React from "react";
 import Hero from "../components/Hero";
-import Portfolio from "../components/Portfolio";
 
-const work = () => {
+const book = () => {
   return (
     <div>
       <Hero
-        heading="My Work"
+        heading="Booking"
         message="This is some of my recent work traveling the world."
+        buttonMess="Let's Book"
+        buttonLink="/booking"
       />
-      <Portfolio />
     </div>
   );
 };
 
-export default work;
+export default book;

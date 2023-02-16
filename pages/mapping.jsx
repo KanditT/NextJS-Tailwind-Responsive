@@ -9,6 +9,8 @@ const mapping = () => {
       <Hero
         heading="Contact"
         message="Submit the form below for more work and quotes."
+        buttonMess="???"
+        buttonLink="/booking"
       />
       <LibrabyMap />
       {/* <Contact /> */}

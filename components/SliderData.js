@@ -1,22 +1,19 @@
+import slideA from "../public/DSC_04763000.jpg";
+import slideB from "../public/DSC_04812800.jpg";
+import slideC from "../public/DSC_3445-c3000.jpg";
+import slideD from "../public/C-2-of-23-cccccc.jpg";
+
 export const SliderData = [
   {
-    image:
-      "https://images.unsplash.com/photo-1535224206242-487f7090b5bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    image: slideA,
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1469362102473-8622cfb973cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2419&q=80",
+    image: slideB,
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1594717527389-a590b56e8d0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    image: slideC,
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1484591974057-265bb767ef71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-  },
-  {
-    image:
-      "https://www.en.kku.ac.th/web/wp-content/uploads/2018/06/DSC_3445-c%E0%B9%81%E0%B8%81%E0%B9%893000.jpg",
+    image: slideD,
   },
 ];
