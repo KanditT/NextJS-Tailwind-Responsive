@@ -109,7 +109,7 @@ const Navbar = () => {
           {nav ? (
             <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
           ) : (
-            <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
+            <AiOutlineMenu size={25} style={{ color: `${textColor}` }} />
           )}
         </div>
         {/* Mobile Menu */}

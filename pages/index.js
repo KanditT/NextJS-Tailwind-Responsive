@@ -3,6 +3,7 @@ import Image from "next/image";
 import Hero from "../components/Hero";
 
 import Slider from "../components/Slider";
+import Formpage from "../components/formpage";
 import { SliderData } from "../components/SliderData";
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
         buttonLink="/#aboutLibrary"
       />
       <Slider slides={SliderData} />
-      {/* <LibrabyMap /> */}
+      <Formpage />
     </div>
   );
 }
