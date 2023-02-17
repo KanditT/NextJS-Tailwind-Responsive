@@ -16,23 +16,23 @@ import LibrabyImg from "./LibrabyImg";
 
 const LibrabyMap = () => {
   return (
-    <div className="max-w-[1240px] mx-auto text-center py-24">
+    <div id="kud" className="max-w-[1240px] mx-auto text-center py-24">
       <p className="text-2xl font-bold">Let see other Library</p>
       <p className="pb-4">GOGO!</p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4">
-        <LibrabyImg socialImg={Img1} caption="Caption for Image 1" />
-        <LibrabyImg socialImg={Img2} caption="Caption for Image 2" />
-        <LibrabyImg socialImg={Img3} caption="Caption for Image 3" />
-        <LibrabyImg socialImg={Img4} caption="Caption for Image 4" />
-        <LibrabyImg socialImg={Img5} caption="Caption for Image 5" />
-        <LibrabyImg socialImg={Img6} caption="Caption for Image 6" />
-        <LibrabyImg socialImg={Img7} caption="Caption for Image 7" />
-        <LibrabyImg socialImg={Img8} caption="Caption for Image 1" />
-        <LibrabyImg socialImg={Img9} caption="Caption for Image 2" />
-        <LibrabyImg socialImg={Img10} caption="Caption for Image 3" />
-        <LibrabyImg socialImg={Img11} caption="Caption for Image 4" />
-        <LibrabyImg socialImg={Img12} caption="Caption for Image 5" />
-        <LibrabyImg socialImg={Img13} caption="Caption for Image 6" />
+        <LibrabyImg socialImg={Img1} />
+        <LibrabyImg socialImg={Img2} />
+        <LibrabyImg socialImg={Img3} />
+        <LibrabyImg socialImg={Img4} />
+        <LibrabyImg socialImg={Img5} />
+        <LibrabyImg socialImg={Img6} />
+        <LibrabyImg socialImg={Img7} />
+        <LibrabyImg socialImg={Img8} />
+        <LibrabyImg socialImg={Img9} />
+        <LibrabyImg socialImg={Img10} />
+        <LibrabyImg socialImg={Img11} />
+        <LibrabyImg socialImg={Img12} />
+        <LibrabyImg socialImg={Img13} />
       </div>
     </div>
   );

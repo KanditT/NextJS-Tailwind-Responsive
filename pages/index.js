@@ -18,7 +18,7 @@ export default function Home() {
         message="Enjoy access to a wide selection conference room.
         Easy communication with your friends."
         buttonMess="Booking"
-        buttonLink="/booking"
+        buttonLink="/#aboutLibrary"
       />
       <Slider slides={SliderData} />
       {/* <LibrabyMap /> */}

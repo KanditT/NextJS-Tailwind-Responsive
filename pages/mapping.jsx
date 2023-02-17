@@ -7,10 +7,10 @@ const mapping = () => {
   return (
     <div>
       <Hero
-        heading="Contact"
-        message="Submit the form below for more work and quotes."
+        heading="Other Library"
+        message="KKU has many more libraries that you can use."
         buttonMess="???"
-        buttonLink="/booking"
+        buttonLink="/mapping#kud"
       />
       <LibrabyMap />
       {/* <Contact /> */}
