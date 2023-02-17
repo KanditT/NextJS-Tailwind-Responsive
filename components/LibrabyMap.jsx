@@ -20,19 +20,52 @@ const LibrabyMap = () => {
       <p className="text-2xl font-bold">Let see other Library</p>
       <p className="pb-4">GOGO!</p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4">
-        <LibrabyImg socialImg={Img1} />
-        <LibrabyImg socialImg={Img2} />
-        <LibrabyImg socialImg={Img3} />
-        <LibrabyImg socialImg={Img4} />
-        <LibrabyImg socialImg={Img5} />
-        <LibrabyImg socialImg={Img6} />
-        <LibrabyImg socialImg={Img7} />
-        <LibrabyImg socialImg={Img8} />
-        <LibrabyImg socialImg={Img9} />
-        <LibrabyImg socialImg={Img10} />
-        <LibrabyImg socialImg={Img11} />
-        <LibrabyImg socialImg={Img12} />
-        <LibrabyImg socialImg={Img13} />
+        <a href="https://www.google.com/maps?ll=16.469542,102.830309&z=16&t=m&hl=th&gl=TH&mapclient=embed&cid=3251952549610997991">
+          <LibrabyImg socialImg={Img1} />
+        </a>
+
+        <a href="https://goo.gl/maps/vzsHJWAEDerWnBGp6">
+          <LibrabyImg socialImg={Img2} />
+        </a>
+        <a href="https://goo.gl/maps/vzsHJWAEDerWnBGp6">
+          <LibrabyImg socialImg={Img3} />
+        </a>
+        <a href="https://goo.gl/maps/vzsHJWAEDerWnBGp6">
+          <LibrabyImg socialImg={Img4} />
+        </a>
+        <a href="https://goo.gl/maps/vzsHJWAEDerWnBGp6">
+          <LibrabyImg socialImg={Img5} />
+        </a>
+        <a href="https://goo.gl/maps/vzsHJWAEDerWnBGp6">
+          <LibrabyImg socialImg={Img6} />
+        </a>
+        <a href="https://goo.gl/maps/vzsHJWAEDerWnBGp6">
+          <LibrabyImg socialImg={Img7} />
+        </a>
+        <a href="https://goo.gl/maps/vzsHJWAEDerWnBGp6">
+          {" "}
+          <LibrabyImg socialImg={Img8} />
+        </a>
+        <a href="https://goo.gl/maps/vzsHJWAEDerWnBGp6">
+          {" "}
+          <LibrabyImg socialImg={Img9} />
+        </a>
+        <a href="https://goo.gl/maps/vzsHJWAEDerWnBGp6">
+          {" "}
+          <LibrabyImg socialImg={Img10} />
+        </a>
+        <a href="https://goo.gl/maps/vzsHJWAEDerWnBGp6">
+          {" "}
+          <LibrabyImg socialImg={Img11} />
+        </a>
+        <a href="https://goo.gl/maps/vzsHJWAEDerWnBGp6">
+          {" "}
+          <LibrabyImg socialImg={Img12} />
+        </a>
+        <a href="https://goo.gl/maps/vzsHJWAEDerWnBGp6">
+          {" "}
+          <LibrabyImg socialImg={Img13} />
+        </a>
       </div>
     </div>
   );

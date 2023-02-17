@@ -33,9 +33,15 @@ const Hero = ({ heading, message, buttonMess, buttonLink }) => {
             cursor: "pointer",
             transition: "width 0.5s",
             fontSize: "1rem",
+            ":hover": {
+              width: "1500px",
+              background: "linear-gradient(to right, #ffffff, #ffffff)",
+              transform: "scale(1.2)",
+              color: "#b30000",
+            },
           }}
         >
-          {buttonMess}
+          <span style={{ transition: "transform 0.1s" }}>{buttonMess}</span>
         </a>
 
         <style jsx>{`

@@ -73,20 +73,32 @@ const Navbar = () => {
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden md:flex">
           <li
-            className="p-5 text-2xl"
-            style={{ fontWeight: "bold", fontSize: "2vw" }}
+            className="p-5 text-2xl hover:text-blue-500"
+            style={{
+              fontWeight: "bold",
+              fontSize: "2vw",
+              transition: "color 0.2s ease",
+            }}
           >
             <Link href="/">Home</Link>
           </li>
           <li
-            className="p-5 text-2xl"
-            style={{ fontWeight: "bold", fontSize: "2vw" }}
+            className="p-5 text-2xl hover:text-blue-500"
+            style={{
+              fontWeight: "bold",
+              fontSize: "2vw",
+              transition: "color 0.2s ease",
+            }}
           >
             <Link href="/booking">Booking</Link>
           </li>
           <li
-            className="p-5 text-2xl"
-            style={{ fontWeight: "bold", fontSize: "2vw" }}
+            className="p-5 text-2xl hover:text-blue-500"
+            style={{
+              fontWeight: "bold",
+              fontSize: "2vw",
+              transition: "color 0.2s ease",
+            }}
           >
             <Link href="/mapping">Mapping</Link>
           </li>
