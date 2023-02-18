@@ -19,7 +19,7 @@ const Slider = ({ slides }) => {
   }
 
   return (
-    <div id="aboutLibrary" className="max-w-[1240px] mx-auto">
+    <div id="aboutLibrary" className="max-w-[1240px] max-h-[1200px] mx-auto">
       <h1
         style={{ color: "#7d0000" }}
         className="text-2xl font-bold text-center p-4"
